@@ -45,7 +45,7 @@ const Home = ()=>{
                 </div>
                 <div className='md:flex md:flex-2 md:flex-col items-center gap-4'>
                     <MdPermContactCalendar className='text-5xl'/>
-                    <h1 className='text-2xl font-bold'>About Us</h1>
+                    <h1 className='text-2xl font-bold'>Contact Us</h1>
                     <p>
                         Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
                     </p>
@@ -136,9 +136,6 @@ const Home = ()=>{
                     <h1 className='text-2xl font-bold text-white'>Contact Us:</h1>
                     <div>
                         <div>
-                        <div>
-                            Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                        </div>
                         <ul className='pt-8'>
                             <li className="md:flex gap-4 items-center">
                                 <FaSquarePhone />
