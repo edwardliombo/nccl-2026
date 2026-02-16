@@ -100,17 +100,17 @@ const Home = ()=>{
                     <div className='flex gap-4'>
                         <div className='flex-1'>
                             <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kS0vt6AnHtx6AmJPHXQF-CLsis-kndplbA&s' alt='pic3' />
-                            <h1 className='text-md font-bold'>Harold Lyanda</h1>
+                            <h1 className='text-md font-bold'>Nzenga E. Simbeye</h1>
                             <p>Director</p>
                         </div>
                         <div className='flex-1'>
                             <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn1Rz8HcarqSIhpDsT_7HiFH4VTk38byPwQ&s' alt='pic1'/>
-                            <h1 className='text-md font-bold'>Harold Lyanda</h1>
+                            <h1 className='text-md font-bold'>Idd Kindamba</h1>
                             <p>Director</p>
                         </div>
                         <div className='flex-1'>
                             <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7_cfzWhcYqXBqRqySL10DSaKLzlcXj1oig&s' alt='pic2' /> 
-                            <h1 className='text-md font-bold'>Harold Lyanda</h1>
+                            <h1 className='text-md font-bold'>William Nsonda</h1>
                             <p>Director</p>
                         </div>
                     </div>
