@@ -4,6 +4,8 @@ import picture3 from '../assets/Picture3.png'
 import picture4 from '../assets/Picture4.png'
 import { useEffect, useState } from 'react';
 import List from './List';
+import { easeInOut, motion } from 'framer-motion';
+
 const Information =()=>{
     const[images, setImages]=useState(0)
     const[text, setText]=useState(0)
@@ -42,16 +44,31 @@ const Information =()=>{
     return(
         
         <section className='md:flex md:mt-16 h-full'>
-            <div className='bg-red-700 text-white p-8 rounded-l-md ml-1'>
+            <div 
+            
+            className='bg-red-700 text-white p-8 rounded-l-md ml-1'>
                 <h1 className='text-2xl font-bold pb-8'>{infoArray[text].title} </h1>
                 
+                  <motion.div 
+                  key={text}
+                initial={{scale:0}}
+                animate={{scale:1}}
+                transition={{duration:0.5, ease:easeInOut}}
+                  >
                     {infoArray[text].description}
+                </motion.div>  
                 
             </div>
             <div>
                 
             </div>
-            <img className='flex-1 object-cover mr-1 rounded-r-md' src={photos[images]} alt={photos[images]}/>
+            
+            <motion.img 
+                key={images}
+                initial={{opacity:0.7}}
+                animate={{opacity:1}}
+                transition={{duration:1.5, ease:easeInOut}}
+                className='flex-1 object-cover mr-1 rounded-r-md' src={photos[images]} alt={photos[images]}/>
         </section>
     )
 

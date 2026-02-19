@@ -1,13 +1,20 @@
-import { FaExclamationCircle, FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaYoutubeSquare } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaYoutubeSquare } from 'react-icons/fa';
 import video from '../assets/vid.mp4'
 import { useEffect, useState } from 'react';
-import { MdGroups, MdPermContactCalendar } from 'react-icons/md';
+import { MdAgriculture} from 'react-icons/md';
 import Information from './Information';
 import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
+import Greetings from './Greetings';
+import { PiPlusBold } from 'react-icons/pi';
+import { BiBarChart } from 'react-icons/bi';
+import { AiFillBank } from 'react-icons/ai';
+import Ourteam from './Ourteam';
+import Logo from '../assets/logo.jpg'
 const Home = ()=>{
-      const fullText = "I greet you with sincere love in the partnership for economic growth and the promotion of trade and agribusiness for development. I welcome you to our website, which aims to provide you with important information and news on advice, research and training issues in the fields of trade and agribusiness. On our website, you will find the opportunity to educate yourself through important information, policies, business opportunities, various updated strategies that exist in Tanzania and even abroad. It is my hope that by going through this website, it will awaken the spirit of growing your economy and that of your institution or company. For development stakeholders, they will benefit from getting accurate information about the organization in order to collaborate with them in achieving the goals of their projects. NCCL experience together with qualified experienced professional experts and the excellent work performance of the parties demonstrates how we can fulfill your wishes. I sincerely invite you to get advice and guidance in the fields of trade and agribusiness. For those who find it difficult or difficult to start, do business/agri-business or continue with a business/agri-business, NCCL is the right dowry, “Your success is NEAR”, Your success is NCCL success.....";
-  const [displayedText, setDisplayedText] = useState("");
+   
+        const fullText = " Near Consult And Company Limited ";
+        const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
     let i = 0;
@@ -15,15 +22,26 @@ const Home = ()=>{
       setDisplayedText(fullText.slice(0, i + 1));
       i++;
       if (i === fullText.length) clearInterval(interval);
-    }, 100);
+    }, 200);
     return () => clearInterval(interval);
+    
+    
   }, []);
 
     return(
         <div>
             <header className="md:flex md:justify-between md:p-8 shadow-md">
-                <h1 className='text-lg font-extrabold text-red-700'>NCCL</h1>
-                <ul className="md:flex md:gap-16">
+                <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+                className='flex items-center gap-4'>
+                    <img className='w-16 rounded-full' src={Logo} alt='logo'/>
+                    <h1 className='text-lg font-extrabold text-red-700'>NEAR CONSULT AND COMPANY LIMITED </h1>
+                </motion.div>
+                
+                <ul className="md:flex md:gap-16 items-center">
                     <li className="font-bold hover:text-red-700 cursor-pointer">Home</li>
                     <li className="font-bold hover:text-red-700 cursor-pointer">About</li>
                     <li className="font-bold hover:text-red-700 cursor-pointer">Experience</li>
@@ -36,40 +54,85 @@ const Home = ()=>{
             <section className='flex items-center justify-center md:mt-4 md:w-full md:h-full md:relative'>
                 <video className='w-full object-cover brightness-50'  src={video} autoPlay loop muted ></video>
                 <div className="absolute flex flex-col gap-8 items-center">
-                    <h1 className='font-bold text-5xl text-white'>Near Consult And Company Limited </h1>
-                    <motion.div className='text-xl text-white p-8'>{displayedText} </motion.div>
+                    <motion.h1
+                     className='font-bold text-5xl text-white'>
+                        {displayedText}
+                    </motion.h1>
+                    <motion.div className='text-xl text-center text-white p-4 px-48'><Greetings /> </motion.div>
                     <button className='md:bg-red-700 md:p-2 md:pl-3 md:pr-3 rounded-sm text-white'>Discover More</button>
                 </div>
             </section>
 
             <section className='md:flex p-8 gap-8 md:mt-8'>
-                <div className='md:flex md:flex-auto md:flex-col items-center gap-4'>
-                    <FaExclamationCircle className='text-5xl'/>
-                    <h1 className='text-2xl font-bold'>About Us</h1>
-                    <p>
-                        Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                    </p>
+                <div className='md:flex w-64 flex-auto items-center gap-8'>
+                    <div className=''>
+                        <div className='flex flex-col pl-8'>
+                            <h1 className='text-3xl font-bold'>About Us</h1>
+                        </div>
+                        
+                        <p className='p-8 text-justify'>
+                            Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
+                        </p>
+                    </div>
+                    <div className='flex flex-col w-full'>
+                        <ul className='flex flex-col gap-4'>
+                            <li className='flex flex-col'>
+                                <div className='flex items-center font-bold'>
+                                    <h1 className='text-3xl'>12</h1>
+                                    <h1 className='text-3xl'><PiPlusBold/></h1>
+                                </div>
+                                <div>Years of Experience</div>
+                            </li>
+                            <li>
+                                <div className='flex items-center font-bold'>
+                                    <h1 className='text-3xl'>100</h1>
+                                    <h1 className='text-3xl'><PiPlusBold/></h1>
+                                </div>
+                                <div>Project Completed</div>
+                            </li>
+                            <li>
+                                <div className='flex items-center font-bold'>
+                                    <h1 className='text-3xl'>98%</h1>
+                                </div>
+                                <div>Client Satisfaction</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div className='md:flex md:flex-2 md:flex-col items-center gap-4'>
-                    <MdGroups className='text-5xl'/>
-                    <h1 className='text-2xl font-bold'>Our Services</h1>
-                    <p>
-                        Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                    </p>
-                </div>
-                <div className='md:flex md:flex-2 md:flex-col items-center gap-4'>
-                    <MdPermContactCalendar className='text-5xl'/>
-                    <h1 className='text-2xl font-bold'>Contact Us</h1>
-                    <p>
-                        Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                    </p>
+                <div className='md:flex md:flex-col w-32 flex-auto gap-4'>
+                    <h1 className='text-3xl font-bold'>Our Services</h1>
+                    <div className='flex justify-between gap-16'>
+                        <div>
+                            <h1 className='text-7xl text-sky-600 font-extrabold'><BiBarChart/></h1>
+                            <div className='font-bold'>
+                                Research & Business Support
+                            </div>
+                        </div>
+                        <div>
+                            <h1 className='text-7xl text-green-600 font-extrabold'><MdAgriculture /></h1>
+                            <div className='font-bold'>
+                                Agribusiness Development
+                            </div>
+                        </div>
+                        <div>
+                            <h1 className='text-7xl text-red-600 font-extrabold'><AiFillBank/></h1>
+                            <div className='font-bold'>
+                                Management & Consultancy
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
+{/*Information section */}
             <section>
                 <Information />
             </section>
-
+{/*Information section */}
+<section>
+    <Ourteam/>
+</section>
             <section className='md:flex p-8  mt-16 gap-8 justify-between'>
                 <div className='w-[50%]'>
                     <h1 className='text-2xl font-bold'>News:</h1>
@@ -109,26 +172,6 @@ const Home = ()=>{
                     
                 </div>
 
-                <div className='w-[50%]'>
-                    <h1 className='text-2xl font-bold md:pb-5'>Meet Our Team</h1>
-                    <div className='flex gap-4'>
-                        <div className='flex-1'>
-                            <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kS0vt6AnHtx6AmJPHXQF-CLsis-kndplbA&s' alt='pic3' />
-                            <h1 className='text-md font-bold'>Nzenga E. Simbeye</h1>
-                            <p>Director</p>
-                        </div>
-                        <div className='flex-1'>
-                            <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAn1Rz8HcarqSIhpDsT_7HiFH4VTk38byPwQ&s' alt='pic1'/>
-                            <h1 className='text-md font-bold'>Idd Kindamba</h1>
-                            <p>Director</p>
-                        </div>
-                        <div className='flex-1'>
-                            <img className='w-full object-cover rounded-md' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7_cfzWhcYqXBqRqySL10DSaKLzlcXj1oig&s' alt='pic2' /> 
-                            <h1 className='text-md font-bold'>William Nsonda</h1>
-                            <p>Director</p>
-                        </div>
-                    </div>
-                </div>
             </section>
             {/*Contact Section*/}
             <div className="w-full h-[450px]">
