@@ -37,7 +37,7 @@ const Home = ()=>{
                 <video className='w-full object-cover brightness-50'  src={video} autoPlay loop muted ></video>
                 <div className="absolute flex flex-col gap-8 items-center">
                     <h1 className='font-bold text-5xl text-white'>Near Consult And Company Limited </h1>
-                    <motion.h1 className='text-xl text-white'>{displayedText} </motion.h1>
+                    <motion.div className='text-xl text-white p-8'>{displayedText} </motion.div>
                     <button className='md:bg-red-700 md:p-2 md:pl-3 md:pr-3 rounded-sm text-white'>Discover More</button>
                 </div>
             </section>
