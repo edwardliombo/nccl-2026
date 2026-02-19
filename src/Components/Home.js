@@ -1,10 +1,24 @@
 import { FaExclamationCircle, FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaYoutubeSquare } from 'react-icons/fa';
 import video from '../assets/vid.mp4'
-
+import { useEffect, useState } from 'react';
 import { MdGroups, MdPermContactCalendar } from 'react-icons/md';
 import Information from './Information';
 import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
+import { motion } from 'framer-motion';
 const Home = ()=>{
+      const fullText = "I greet you with sincere love in the partnership for economic growth and the promotion of trade and agribusiness for development. I welcome you to our website, which aims to provide you with important information and news on advice, research and training issues in the fields of trade and agribusiness. On our website, you will find the opportunity to educate yourself through important information, policies, business opportunities, various updated strategies that exist in Tanzania and even abroad. It is my hope that by going through this website, it will awaken the spirit of growing your economy and that of your institution or company. For development stakeholders, they will benefit from getting accurate information about the organization in order to collaborate with them in achieving the goals of their projects. NCCL experience together with qualified experienced professional experts and the excellent work performance of the parties demonstrates how we can fulfill your wishes. I sincerely invite you to get advice and guidance in the fields of trade and agribusiness. For those who find it difficult or difficult to start, do business/agri-business or continue with a business/agri-business, NCCL is the right dowry, “Your success is NEAR”, Your success is NCCL success.....";
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setDisplayedText(fullText.slice(0, i + 1));
+      i++;
+      if (i === fullText.length) clearInterval(interval);
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
     return(
         <div>
             <header className="md:flex md:justify-between md:p-8 shadow-md">
@@ -23,7 +37,7 @@ const Home = ()=>{
                 <video className='w-full object-cover brightness-50'  src={video} autoPlay loop muted ></video>
                 <div className="absolute flex flex-col gap-8 items-center">
                     <h1 className='font-bold text-5xl text-white'>Near Consult And Company Limited </h1>
-                    <h1 className='text-xl text-white'>Optimally tailored solutions that enhance business excellence and sustainable performance.</h1>
+                    <motion.h1 className='text-xl text-white'>{displayedText} </motion.h1>
                     <button className='md:bg-red-700 md:p-2 md:pl-3 md:pr-3 rounded-sm text-white'>Discover More</button>
                 </div>
             </section>
