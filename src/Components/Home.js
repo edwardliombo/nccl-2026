@@ -11,6 +11,8 @@ import { BiBarChart } from 'react-icons/bi';
 import { AiFillBank } from 'react-icons/ai';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
+import Missioncard from './Missioncard';
+import Mission from './Mission';
 const Home = ()=>{
    
         const fullText = " Near Consult And Company Limited ";
@@ -37,7 +39,7 @@ const Home = ()=>{
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 1, ease: "easeInOut" }}
                 className='flex items-center gap-4'>
-                    <img className='w-16 rounded-full' src={Logo} alt='logo'/>
+                    <img className='w-16' src={Logo} alt='logo'/>
                     <h1 className='text-lg font-extrabold text-red-700'>NEAR CONSULT AND COMPANY LIMITED </h1>
                 </motion.div>
                 
@@ -63,11 +65,12 @@ const Home = ()=>{
                 </div>
             </section>
 
-            <section className='md:flex p-8 gap-8 md:mt-8'>
+
+            <section className='md:flex p-8  pt-28 pb-28 gap-8 bg-gray-200'>
                 <div className='md:flex w-64 flex-auto items-center gap-8'>
                     <div className=''>
                         <div className='flex flex-col pl-8'>
-                            <h1 className='text-3xl font-bold'>About Us</h1>
+                            <h1 className='text-5xl font-bold'>About Us</h1>
                         </div>
                         
                         <p className='p-8 text-justify'>
@@ -101,10 +104,10 @@ const Home = ()=>{
                     
                 </div>
                 <div className='md:flex md:flex-col w-32 flex-auto gap-4'>
-                    <h1 className='text-3xl font-bold'>Our Services</h1>
+                    <h1 className='text-5xl font-bold'>Our Services</h1>
                     <div className='flex justify-between gap-16'>
                         <div>
-                            <h1 className='text-7xl text-sky-600 font-extrabold'><BiBarChart/></h1>
+                            <h1 className='text-7xl text-sky-700 font-extrabold'><BiBarChart/></h1>
                             <div className='font-bold'>
                                 Research & Business Support
                             </div>
@@ -125,6 +128,19 @@ const Home = ()=>{
                 </div>
             </section>
 
+            {/*vission and mission section */}
+            <section className="flex flex-col items-center p-16 pt-16 pb-8">
+                <h1 className='text-5xl font-bold'>Our Vision & Mission</h1>
+                
+                <section className='flex gap-48'>
+                {Mission.map((list)=>(
+                        <Missioncard id={list.id} name={list.name} title={list.title} ico={list.ico}/>
+                    
+                ))}
+                </section>
+            </section>
+                
+            {/*vission and mission section */}
 {/*Information section */}
             <section>
                 <Information />
