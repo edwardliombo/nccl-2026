@@ -6,12 +6,12 @@ import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
 import { easeInOut, motion } from 'framer-motion';
 import Greetings from './Greetings';
 import { PiPlusBold } from 'react-icons/pi';
-import { BiBarChart } from 'react-icons/bi';
-import { AiFillBank } from 'react-icons/ai';
+import { BiBriefcase } from 'react-icons/bi';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
 import {Mission, Core} from './Mission';
+import { GiTeacher } from 'react-icons/gi';
 
 const Home = ()=>{
    
@@ -27,7 +27,6 @@ const Home = ()=>{
     }, 200);
     return () => clearInterval(interval);
     
-    
   }, []);
 
     return(
@@ -39,8 +38,8 @@ const Home = ()=>{
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 1, ease: "easeInOut" }}
                 className='flex items-center gap-4'>
-                    <img className='w-16' src={Logo} alt='logo'/>
-                    <h1 className='text-lg font-extrabold text-red-700'>NEAR CONSULT AND COMPANY LIMITED </h1>
+                    <img className='w-20' src={Logo} alt='logo'/>
+                    <marquee direction="right"><h1 className='text-lg font-extrabold text-red-700'>NEAR CONSULT AND COMPANY LIMITED </h1></marquee>
                 </motion.div>
                 
                 <ul className="md:flex md:gap-16 items-center">
@@ -107,7 +106,7 @@ const Home = ()=>{
                     <h1 className='text-5xl font-bold'>Our Services</h1>
                     <div className='flex justify-between gap-16'>
                         <div>
-                            <h1 className='text-7xl text-sky-700 font-extrabold'><BiBarChart/></h1>
+                            <h1 className='text-7xl text-sky-700 font-extrabold'><BiBriefcase/> </h1>
                             <div className='font-bold'>
                                 Research & Business Support
                             </div>
@@ -119,9 +118,9 @@ const Home = ()=>{
                             </div>
                         </div>
                         <div>
-                            <h1 className='text-7xl text-red-600 font-extrabold'><AiFillBank/></h1>
+                            <h1 className='text-7xl text-red-600 font-extrabold'><GiTeacher /> </h1>
                             <div className='font-bold'>
-                                Management & Consultancy
+                                Training & Capacity Building
                             </div>
                         </div>
                     </div>
