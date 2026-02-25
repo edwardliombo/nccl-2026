@@ -12,6 +12,7 @@ import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
 import {Mission, Core} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
+import Marquee from 'react-fast-marquee';
 
 const Home = ()=>{
    
@@ -39,7 +40,7 @@ const Home = ()=>{
             transition={{ duration: 1, ease: "easeInOut" }}
                 className='flex items-center gap-4'>
                     <img className='w-20' src={Logo} alt='logo'/>
-                    <marquee direction="right"><h1 className='text-lg font-extrabold text-red-700'>NEAR CONSULT AND COMPANY LIMITED </h1></marquee>
+                    <Marquee direction="right"><h1 className='text-lg font-extrabold text-red-700 pr-8'>NEAR CONSULT AND COMPANY LIMITED </h1></Marquee>
                 </motion.div>
                 
                 <ul className="md:flex md:gap-16 items-center">
