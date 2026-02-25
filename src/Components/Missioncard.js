@@ -1,11 +1,11 @@
 const Missioncard = ({id, name, title, ico})=>{
     
     return(
-        <section className="shadow-lg p-16 mt-8">
-                <div className='flex pt-8'>
-                    <div className="flex flex-col gap-4 justify-center items-center">
+        <section className="flex flex-col flex-1 shadow-lg p-8 mt-8 w-[25%] h-96">
+                <div className='flex pt-4'>
+                    <div className="flex flex-col gap-2 justify-center items-center">
                         <h1 className="text-5xl font-bold text-sky-700">{ico} </h1>
-                        <h1 className="text-4xl font-bold">{name} </h1>
+                        <h1 className="text-2xl font-bold">{name} </h1>
                         <div>
                             {title}
                         </div>

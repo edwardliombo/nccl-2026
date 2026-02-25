@@ -1,10 +1,10 @@
 import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaYoutubeSquare } from 'react-icons/fa';
-import video from '../assets/vid.mp4'
+import video from '../assets/2876087-hd_1920_1080_30fps.mp4'
 import { useEffect, useState } from 'react';
 import { MdAgriculture} from 'react-icons/md';
 import Information from './Information';
 import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
-import { motion } from 'framer-motion';
+import { easeInOut, motion } from 'framer-motion';
 import Greetings from './Greetings';
 import { PiPlusBold } from 'react-icons/pi';
 import { BiBarChart } from 'react-icons/bi';
@@ -12,7 +12,8 @@ import { AiFillBank } from 'react-icons/ai';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
-import Mission from './Mission';
+import {Mission, Core} from './Mission';
+
 const Home = ()=>{
    
         const fullText = " Near Consult And Company Limited ";
@@ -74,7 +75,7 @@ const Home = ()=>{
                         </div>
                         
                         <p className='p-8 text-justify'>
-                            Near Consult and Company Limited (NCCL) is a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
+                            Near Consult and Company Limited (NCCL) is a professional Capacity Building, Business, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
                         </p>
                     </div>
                     <div className='flex flex-col w-full'>
@@ -129,19 +130,60 @@ const Home = ()=>{
             </section>
 
             {/*vission and mission section */}
-            <section className="flex flex-col items-center p-16 pt-16 pb-8">
-                <h1 className='text-5xl font-bold'>Our Vision & Mission</h1>
-                
-                <section className='flex gap-48'>
-                {Mission.map((list)=>(
-                        <Missioncard id={list.id} name={list.name} title={list.title} ico={list.ico}/>
+            <section className='flex p-4 mt-4 gap-8'>
+                <div className='flex-1 p-8 shadow-lg'>
+                    <h1 className='text-5xl font-bold pb-8'>Who Are We</h1>
+                    <div>
+                        Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219. Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
+                    </div>
                     
-                ))}
-                </section>
+                </div>
+                <div className="flex flex-1 flex-col rounded-md p-4 items-center">
+                    <div className='flex flex-col items-center'>
+                        <h1 className='text-2xl font-bold'>Our Vision & Mission</h1>
+                        <div className='flex gap-2'>
+                        {Mission.map((list)=>(
+                                <Missioncard id={list.id} name={list.name} title={list.title} ico={list.ico}/>
+                            
+                        ))}
+                    </div>
+                </div>
+                   
+            </div>
             </section>
+            <section className='flex flex-col items-center '>
+                <h1 className='text-2xl font-bold'>Core Values</h1>
+                <div className='flex flex-wrap items-center justify-center h-[30%]'>
+                    {Core.map((items)=>(
+                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className='flex w-[30%] p-8 '>
+                        <Missioncard key={items.id} id={items.id} name={items.name} title={items.title} ico={items.ico}/>
+                        </motion.div>
+                        
+                    ))}
+                </div>
+            </section>
+            
+            <section className='flex p-8 gap-12'>
+                <div className='border-l-8 flex-1 p-4 rounded-l-lg bg-gray-200 border-green-700'>
+                    <h1 className='text-2xl font-bold '>
+                        <span>Primary Geographic Coverage</span>
+                    </h1>
+                    <p>
+                        Our company mostly covers Mbeya, Songwe, Rukwa, Katavi, Njombe, Iringa, Morogoro and Dar es salaam. 
+                    </p>
+                </div>
+                <div className='flex-1 border-l-8 p-4 rounded-l-lg bg-gray-200 border-sky-700'>
+                    <h1 className='text-2xl font-bold '>
+                        <span>Coming Coverage</span>
+                    </h1>
+                    <p>
+                        Dodoma, Singida and Manyara
+                    </p>
+                </div>
                 
+            </section>
             {/*vission and mission section */}
-{/*Information section */}
+{/*Information section 
             <section>
                 <Information />
             </section>

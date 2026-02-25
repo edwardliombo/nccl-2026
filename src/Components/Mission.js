@@ -1,5 +1,10 @@
 import { BsEye } from "react-icons/bs";
+import { FaLock, FaRegStar } from "react-icons/fa";
 import { GiTargetArrows } from "react-icons/gi";
+import { IoShareSocial } from "react-icons/io5";
+import { LuShield } from "react-icons/lu";
+import { MdPalette} from "react-icons/md";
+import { PiHandshakeDuotone } from "react-icons/pi";
 
 const Mission=[
     {
@@ -10,10 +15,49 @@ const Mission=[
     },
     {
         id:2,
-        name:"Vission",
+        name:"Vision",
         title:"NCCL’s Vision is to be the most reliable and responsible support services to our clients, and committed partners towards growth and continuing success.",
         ico:<BsEye />
     }
 ]
 
-export default Mission;
+const Core=[
+    {
+        id:1,
+        name:"Integrity ",
+        title:"We put high importance on personal & corporate INTEGRITY. ",
+        ico:<LuShield />
+    },
+    {
+        id:2,
+        name:"Excellence ",
+        title:"We have a culture of continuously striving for EXCELLENCE & for the best in everything we do.",
+        ico:<FaRegStar />
+    },
+    {
+        id:3,
+        name:"Connecting",
+        title:"We are constantly CONNECTING with ourselves, with other people, businesses & networks.",
+        ico:<IoShareSocial />
+    },
+    {
+        id:4,
+        name:"Customer Care ",
+        title:"We have committed staff, partners, stakeholders who believes that QUALITY CUSTOMER SERVICE starts with me.",
+        ico:<PiHandshakeDuotone />
+    },
+    {
+        id:5,
+        name:"Creativeness ",
+        title:"Our CREATIVE staff will lead you to pure satisfactions.",
+        ico:<MdPalette />
+    },
+    {
+        id:6,
+        name:"Confidentiality ",
+        title:"We pride ourselves in providing our clients with a professional service, guaranteed accuracy, and the highest level of CONFIDENTIALITY",
+        ico:<FaLock />
+    }
+]
+
+export {Mission, Core};
