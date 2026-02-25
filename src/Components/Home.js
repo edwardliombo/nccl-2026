@@ -2,7 +2,6 @@ import { FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaYoutubeSquare 
 import video from '../assets/2876087-hd_1920_1080_30fps.mp4'
 import { useEffect, useState } from 'react';
 import { MdAgriculture} from 'react-icons/md';
-import Information from './Information';
 import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
 import { easeInOut, motion } from 'framer-motion';
 import Greetings from './Greetings';
@@ -182,12 +181,7 @@ const Home = ()=>{
                 </div>
                 
             </section>
-            {/*vission and mission section */}
-{/*Information section 
-            <section>
-                <Information />
-            </section>
-{/*Information section */}
+           
 <section>
     <Ourteam/>
 </section>
