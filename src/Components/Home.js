@@ -10,13 +10,14 @@ import { BiBriefcase } from 'react-icons/bi';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
-import {Mission, Core} from './Mission';
+import {Mission, Core, Project} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
 import Marquee from 'react-fast-marquee';
+import Projectcard from './Projectcard';
 
 const Home = ()=>{
    
-        const fullText = " Near Consult And Company Limited ";
+        const fullText = " Near Consult and Company Limited ";
         const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -181,8 +182,19 @@ const Home = ()=>{
                 </div>
                 
             </section>
-           
-<section>
+            <section className='flex gap-8 bg-gray-200'>
+                <h1 className="basis-1/4 text-2xl font-bold p-8 items-center self-center text-center">Business Consultancy we can provide for your business includes</h1>
+                <div className="flex flex-1 flex-wrap gap-4 p-8 md:pl-16">
+                {Project.map((item)=>(
+                    <div className='odd:bg-green-700 hover:bg-black even:bg-sky-700 rounded-md text-white' key={item.id}>
+                        <Projectcard description={item.description} />
+                    </div>
+                ))}
+
+                </div>
+            </section>
+  
+<section className='flex flex-wrap'>
     <Ourteam/>
 </section>
             <section className='md:flex p-8  mt-16 gap-8 justify-between'>

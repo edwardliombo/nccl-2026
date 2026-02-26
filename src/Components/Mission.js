@@ -60,4 +60,43 @@ const Core=[
     }
 ]
 
-export {Mission, Core};
+const Project =[
+    {
+        id:1,
+        description:"Training and capacity building on Agri-business development, Governance, Market System Development, Financial Management, Leadership, and Project Planning.",
+    },
+    {
+        id:2,
+        description:"Research and consultancy in Agri-business, Business, Cross Border trade, Management and policies",
+    },
+    {
+        id:3,
+        description:"To provide corporate restructuring, strategic planning, strategic management, culture transformation and change management consulting services",
+    },
+    {
+        id:4,
+        description:"Training and capacity building on Agri-business development, Governance, Market System Development, Financial Management, Leadership, and Project Planning.",
+    },
+    {
+        id:5,
+        description:"Capacity Building on Arbitration and Market Actor Brokerage Service",
+    },
+    {
+        id:6,
+        description:"Training in culture transformation, sales, customer service, team building, leadership and planning",
+    },
+    {
+        id:7,
+        description:"Preparation of Business Plan, Strategic Plan, Financial regulation, Scheme of Service, Human Resource Management and Administration Manuals.",
+    },
+    {
+        id:8,
+        description:"Preparation and implementation of Action Plan, Marketing Plan, Career Development plan and Corporate Strategic Plan and Business Plan.",
+    },
+    {
+        id:2,
+        description:"Research/study and/or survey",
+    }
+
+]
+export {Mission, Core, Project};
