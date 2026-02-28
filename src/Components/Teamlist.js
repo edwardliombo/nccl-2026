@@ -11,21 +11,21 @@ const Teamlist =[
     {
         id:2,
         name:'Mary Gordon',
-        title:'Head of Agri-business development',
+        title:'Head of Agri-business Development',
         photo:'https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78='
 
     },
     {
         id:3,
         name:'',
-        title:'Head of research and business support',
+        title:'Head of Research and Business Support',
         photo:'https://media.istockphoto.com/id/1341046662/vector/picture-profile-icon-human-or-people-sign-and-symbol-for-template-design.jpg?s=612x612&w=0&k=20&c=A7z3OK0fElK3tFntKObma-3a7PyO8_2xxW0jtmjzT78='
 
     },
     {
         id:4,
         name:'Rachel Theophil Kalengo',
-        title:'Coordinator of youth and women',
+        title:'Coordinator of Youth and Women',
         photo:rachel
 
     }
