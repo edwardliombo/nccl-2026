@@ -241,7 +241,7 @@ const Home = ()=>{
                             <li>Research & Business Support</li>
                             <li>Capacity Building & Training</li>
                             <li>Agribusiness Development</li>
-                            <li>Management & Consultancy</li>
+                            <li>Project Management</li>
                             <li>ICT/IT Solutions</li>
                         </ul>
                     </div>

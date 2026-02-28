@@ -104,18 +104,10 @@ const Project =[
 ]
 
 const News = [
-    {
+        {
         id:'1',
-        date:'Jan - Jul',
-        year:'2026',
-        title:'Mentorship and Coaching',
-        description:'Mentorship and Coaching Programme for youth and women',
-        photo:picture1
-    },
-    {
-        id:'2',
-        date:'Apr- Dec',
-        year:'2026',
+        date:'2025 - 2028',
+        year:'',
         title:'Nafaka Kilimo',
         description:`Capacity building through training to beneficiaries Lead
 Farmers, project staff and Village Agricultural
@@ -124,9 +116,9 @@ intervention villages and wards of the Inclusive Rice
 Value Chain project under Nafaka Kilimo
 Implementation`,
         photo:picture2
-    },
+    },    
     {
-        id:'3',
+        id:'2',
         date:'Jan - Jul',
         year:'2025',
         title:'Mentorship and Coaching',
@@ -137,6 +129,16 @@ intervention villages and wards of the Inclusive Rice
 Value Chain project under Nafaka Kilimo
 Implementation`,
         photo:picture3
-    }
+    },
+    {
+        id:'3',
+        date:'Jan - Jul',
+        year:'2026',
+        title:'Mentorship and Coaching',
+        description:'Mentorship and Coaching Programme for youth and women',
+        photo:picture1
+    },
+
+
 ]
 export {Mission, Core, Project, News};
