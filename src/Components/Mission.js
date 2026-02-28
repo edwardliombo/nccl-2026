@@ -5,7 +5,6 @@ import { IoShareSocial } from "react-icons/io5";
 import { LuShield } from "react-icons/lu";
 import { MdPalette} from "react-icons/md";
 import { PiHandshakeDuotone } from "react-icons/pi";
-import picture1 from '../assets/Picture1.jpg'
 import picture2 from '../assets/Picture2.png'
 import picture8 from '../assets/Picture8.png'
 import picture7 from '../assets/Picture7.png'
