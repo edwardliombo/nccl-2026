@@ -5,6 +5,9 @@ import { IoShareSocial } from "react-icons/io5";
 import { LuShield } from "react-icons/lu";
 import { MdPalette} from "react-icons/md";
 import { PiHandshakeDuotone } from "react-icons/pi";
+import picture1 from '../assets/Picture1.jpg'
+import picture2 from '../assets/Picture2.png'
+import picture3 from '../assets/Picture3.png'
 
 const Mission=[
     {
@@ -99,4 +102,41 @@ const Project =[
     }
 
 ]
-export {Mission, Core, Project};
+
+const News = [
+    {
+        id:'1',
+        date:'Jan - Jul',
+        year:'2026',
+        title:'Mentorship and Coaching',
+        description:'Mentorship and Coaching Programme for youth and women',
+        photo:picture1
+    },
+    {
+        id:'2',
+        date:'Apr- Dec',
+        year:'2026',
+        title:'Nafaka Kilimo',
+        description:`Capacity building through training to beneficiaries Lead
+Farmers, project staff and Village Agricultural
+Extension Officers who were working in the project
+intervention villages and wards of the Inclusive Rice
+Value Chain project under Nafaka Kilimo
+Implementation`,
+        photo:picture2
+    },
+    {
+        id:'3',
+        date:'Jan - Jul',
+        year:'2025',
+        title:'Mentorship and Coaching',
+        description:`Capacity building through training to beneficiaries Lead
+Farmers, project staff and Village Agricultural
+Extension Officers who were working in the project
+intervention villages and wards of the Inclusive Rice
+Value Chain project under Nafaka Kilimo
+Implementation`,
+        photo:picture3
+    }
+]
+export {Mission, Core, Project, News};

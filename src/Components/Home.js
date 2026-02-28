@@ -10,10 +10,10 @@ import { BiBriefcase } from 'react-icons/bi';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
-import {Mission, Core, Project} from './Mission';
+import {Mission, Core, News} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
 import Marquee from 'react-fast-marquee';
-import Projectcard from './Projectcard';
+import Newscard from './Newscard';
 
 const Home = ()=>{
    
@@ -128,7 +128,6 @@ const Home = ()=>{
                     </div>
                 </div>
             </section>
-
             {/*vission and mission section */}
             <section className='flex p-4 mt-4 gap-8'>
                 <div className='flex-1 p-8 shadow-lg'>
@@ -182,63 +181,24 @@ const Home = ()=>{
                 </div>
                 
             </section>
-            <section className='flex gap-8 bg-gray-200'>
-                <h1 className="basis-1/4 text-2xl font-bold p-8 items-center self-center text-center">Business Consultancy we can provide for your business includes</h1>
-                <div className="flex flex-1 flex-wrap gap-4 p-8 md:pl-16">
-                {Project.map((item)=>(
-                    <div className='odd:bg-green-700 hover:bg-black even:bg-sky-700 rounded-md text-white' key={item.id}>
-                        <Projectcard description={item.description} />
-                    </div>
-                ))}
-
-                </div>
-            </section>
   
 <section className='flex flex-wrap'>
     <Ourteam/>
 </section>
-            <section className='md:flex p-8  mt-16 gap-8 justify-between'>
-                <div className='w-[50%]'>
-                    <h1 className='text-2xl font-bold'>News:</h1>
-                    <div className='border-b-[1px] border-black'>
-                        <div>
-                            <h1 className='text-md font-bold'>January 1, 2026</h1>
-                            <p>
-                                s a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div className='border-b-[1px] border-black'>
-                        <div>
-                            <h1 className='text-md font-bold'>January 1, 2026</h1>
-                            <p>
-                                s a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                            </p>
-                        </div>
-                    </div>
-                    <div className='border-b-[1px] border-black'>
-                        <div>
-                            <h1 className='text-md font-bold'>January 1, 2026</h1>
-                            <p>
-                                s a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                            </p>
-                        </div>
-                    </div>
-                    <div className='border-b-[1px] border-black'>
-                        <div>
-                            <h1 className='text-md font-bold'>January 1, 2026</h1>
-                            <p>
-                                s a professional Capacity Building, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
-                            </p>
-                        </div>
-                    </div>
-                    
-                </div>
+<section className='p-8' >
+    <div className=''>
+        <h1 className='text-2xl text-center p-8 font-bold'>News & Events:</h1>
+        <div className='flex gap-8'>
+            {News.map((items)=>(
+                <Newscard  id={items.id}  date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
+            ))}
+            
+         </div>        
+    </div>
+</section>
 
-            </section>
-            {/*Contact Section*/}
-            <div className="w-full h-[450px]">
+{/*Contact Section*/}
+<div className="w-full h-[450px]">
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.687812058663!2d33.44437397321713!3d-8.908587491430117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19009ff2fef92bed%3A0xc2eec0055f392c8e!2sFOREST%20MPYA!5e0!3m2!1sen!2stz!4v1771196821919!5m2!1sen!2stz"
     width="100%"

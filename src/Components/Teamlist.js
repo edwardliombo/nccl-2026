@@ -30,4 +30,5 @@ const Teamlist =[
 
     }
 ]
+
 export default Teamlist;
