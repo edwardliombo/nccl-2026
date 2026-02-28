@@ -7,7 +7,8 @@ import { MdPalette} from "react-icons/md";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import picture1 from '../assets/Picture1.jpg'
 import picture2 from '../assets/Picture2.png'
-import picture3 from '../assets/Picture3.png'
+import picture8 from '../assets/Picture8.png'
+import picture7 from '../assets/Picture7.png'
 
 const Mission=[
     {
@@ -128,7 +129,7 @@ Extension Officers who were working in the project
 intervention villages and wards of the Inclusive Rice
 Value Chain project under Nafaka Kilimo
 Implementation`,
-        photo:picture3
+        photo:picture8
     },
     {
         id:'3',
@@ -136,7 +137,7 @@ Implementation`,
         year:'2026',
         title:'Mentorship and Coaching',
         description:'Mentorship and Coaching Programme for youth and women',
-        photo:picture1
+        photo:picture7
     },
 
 
