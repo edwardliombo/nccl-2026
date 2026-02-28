@@ -108,7 +108,7 @@ const News = [
         id:'1',
         date:'2025 - 2028',
         year:'',
-        title:'Nafaka Kilimo',
+        title:'Capacity Building',
         description:`Capacity building through training to beneficiaries Lead
 Farmers, project staff and Village Agricultural
 Extension Officers who were working in the project
