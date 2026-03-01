@@ -10,13 +10,13 @@ import { BiBriefcase } from 'react-icons/bi';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
-import {Mission, Core, News} from './Mission';
+import {Mission, Core, News, Partnerlist} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
 import Marquee from 'react-fast-marquee';
 import Newscard from './Newscard';
+import Partner from './Partner';
 
 const Home = ()=>{
-   
         const fullText = " Near Consult and Company Limited ";
         const [displayedText, setDisplayedText] = useState("");
 
@@ -182,20 +182,38 @@ const Home = ()=>{
                 
             </section>
   
-<section className='flex flex-wrap'>
+<section className='flex'>
     <Ourteam/>
 </section>
 <section className='p-8' >
     <div className=''>
         <h1 className='text-2xl text-center p-8 font-bold'>News & Events:</h1>
-        <div className='flex gap-8'>
+        <div className='flex gap-8 flex-wrap'>
             {News.map((items)=>(
+                <div key={items.id} className="w-full sm:w-full lg:w-[30%]">
                 <Newscard  id={items.id}  date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
+                </div>
             ))}
             
          </div>        
     </div>
 </section>
+
+{/*.............................Partners Section..........................*/}
+<div className='flex flex-col p-16'>
+    <div className="flex flex-col items-center justify-center w-full pb-16">
+        <h1 className="font-bold text-2xl">Partners</h1>
+        <h1 className="">Grateful for the support of our valued partners.</h1>
+    </div>
+    <div className='flex items-center justify-center gap-8 flex-wrap'>
+        {Partnerlist.map((items)=>(
+            <Partner key={items.id} id={items.id} title={items.title} short={items.short} ico={items.ico} />
+        ))}
+    </div>
+
+</div>
+
+
 
 {/*Contact Section*/}
 <div className="w-full h-[450px]">

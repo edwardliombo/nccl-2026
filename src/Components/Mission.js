@@ -8,6 +8,12 @@ import { PiHandshakeDuotone } from "react-icons/pi";
 import picture2 from '../assets/Picture2.png'
 import picture8 from '../assets/Picture8.png'
 import picture7 from '../assets/Picture7.png'
+import nafaka from '../assets/nafaka.jpeg'
+import rikolto from '../assets/rikolto.jpeg'
+import tcca from '../assets/tcca.jpeg'
+import usaid from '../assets/usaid.jpeg'
+import tanzania from '../assets/tanzania.jpeg'
+
 
 const Mission=[
     {
@@ -141,4 +147,37 @@ Implementation`,
 
 
 ]
-export {Mission, Core, Project, News};
+
+const Partnerlist =[
+    {
+        id:1,
+        title:'Nafaka kilimo',
+        ico:nafaka
+    },
+    {
+        id:2,
+        title:'Rikolto',
+        short:'Rikolto',
+        ico:rikolto
+    },
+    {
+        id:3,
+        title:'Tanzania National Chamber of Commerce',
+        short:'TCCIA',
+        ico:tcca
+    },
+    {
+        id:4,
+        title:'United States Agency for International Development',
+        short:'USAID',
+        ico:usaid
+    },
+    {
+        id:5,
+        title:'Tanzania Government',
+        short:'MoE',
+        ico:tanzania
+    }
+
+]
+export {Mission, Core, Project, News, Partnerlist};

@@ -7,9 +7,11 @@ const Ourteam = ()=>{
                         <h1 className='text-2xl text-center font-bold md:pb-5'>Meet Our Team</h1>
                     </div>
                     
-                    <div className='flex p-8 gap-8'>
+                    <div className='flex flex-wrap p-8 gap-8'>
                         {Teamlist.map((list)=>(
-                        <Teamcard name={list.name} title={list.title} photo={list.photo} />
+                            <div className="w-full sm:w-full lg:w-[30%]">
+                                <Teamcard name={list.name} title={list.title} photo={list.photo} />
+                            </div>
                     ))}
                     </div>
                     
