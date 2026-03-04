@@ -6,13 +6,13 @@ import { LuShield } from "react-icons/lu";
 import { MdPalette} from "react-icons/md";
 import { PiHandshakeDuotone } from "react-icons/pi";
 import picture2 from '../assets/Picture2.png'
-import picture8 from '../assets/Picture8.png'
 import picture7 from '../assets/Picture7.png'
 import nafaka from '../assets/nafaka.jpeg'
 import rikolto from '../assets/rikolto.jpeg'
 import tcca from '../assets/tcca.jpeg'
 import usaid from '../assets/usaid.jpeg'
 import tanzania from '../assets/tanzania.jpeg'
+import kitalu from '../assets/kitalu.jpg'
 
 
 const Mission=[
@@ -111,7 +111,7 @@ const Project =[
 
 const News = [
         {
-        id:'1',
+        id:1,
         date:'2025 - 2028',
         year:'',
         title:'Capacity Building',
@@ -127,14 +127,9 @@ Implementation`,
         id:'2',
         date:'Jan - Jul',
         year:'2025',
-        title:'Mentorship and Coaching',
-        description:`Capacity building through training to beneficiaries Lead
-Farmers, project staff and Village Agricultural
-Extension Officers who were working in the project
-intervention villages and wards of the Inclusive Rice
-Value Chain project under Nafaka Kilimo
-Implementation`,
-        photo:picture8
+        title:'Kitalu Mkeka Practical Session',
+        description:`A practical training session on Kitalu Mkeka technology was conducted for agricultural officers to strengthen their technical capacity in nursery establishment and management. `,
+        photo:kitalu
     },
     {
         id:'3',

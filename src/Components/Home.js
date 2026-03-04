@@ -6,7 +6,7 @@ import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
 import { easeInOut, motion } from 'framer-motion';
 import Greetings from './Greetings';
 import { PiPlusBold } from 'react-icons/pi';
-import { BiBriefcase } from 'react-icons/bi';
+import {BiBriefcase } from 'react-icons/bi';
 import Ourteam from './Ourteam';
 import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
@@ -67,8 +67,8 @@ const Home = ()=>{
             </section>
 
 
-            <section className='md:flex p-8  pt-28 pb-28 gap-8 bg-gray-200'>
-                <div className='md:flex w-64 flex-auto items-center gap-8'>
+            <section className='grid md:grid-cols-2 sm:grid-cols-1 p-8  pt-28 pb-28 gap-4 bg-gray-200'>
+                <div className='grid md:grid-cols-2 sm:grid-cols-1 items-center gap-8'>
                     <div className=''>
                         <div className='flex flex-col pl-8'>
                             <h1 className='text-5xl font-bold'>About Us</h1>
@@ -129,32 +129,43 @@ const Home = ()=>{
                 </div>
             </section>
             {/*vission and mission section */}
-            <section className='flex p-4 mt-4 gap-8'>
-                <div className='flex-1 p-8 shadow-lg'>
+            <section className='grid md:grid-cols-2 sm:grid-cols-1 p-4 mt-4'>
+                <div className='p-8 shadow-lg'>
                     <h1 className='text-5xl font-bold pb-8'>Who Are We</h1>
-                    <div>
-                        Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219. Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
+                    <details>
+
+<summary className="cursor-pointer font-semibold text-lg text-justify">
+      Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219.
+    </summary>
+    <div className='text-justify'>
+                         Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
                     </div>
                     
+
+                    </details>
+                     
+                    
                 </div>
-                <div className="flex flex-1 flex-col rounded-md p-4 items-center">
-                    <div className='flex flex-col items-center'>
-                        <h1 className='text-2xl font-bold'>Our Vision & Mission</h1>
-                        <div className='flex gap-2'>
+                <div className="rounded-md p-4 ">
+                    <div className='justify-center'>
+                        <div className='grid md:grid-cols-2 md:gap-8 sm:grid-cols-1'>
                         {Mission.map((list)=>(
+                            <div className='w-full h-full p-8 shadow-md'>
                                 <Missioncard id={list.id} name={list.name} title={list.title} ico={list.ico}/>
-                            
+                            </div>
                         ))}
-                    </div>
+                        </div>
+
+                    
                 </div>
                    
             </div>
             </section>
             <section className='flex flex-col items-center '>
                 <h1 className='text-2xl font-bold'>Core Values</h1>
-                <div className='flex flex-wrap items-center justify-center h-[30%]'>
+                <div className='md:grid md:grid-cols-4 sm:grid-cols-4 gap-8 items-center justify-center w-full'>
                     {Core.map((items)=>(
-                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className='flex w-[30%] p-8 '>
+                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className='flex w-full h-full p-8 shadow-md '>
                         <Missioncard key={items.id} id={items.id} name={items.name} title={items.title} ico={items.ico}/>
                         </motion.div>
                         
@@ -182,15 +193,15 @@ const Home = ()=>{
                 
             </section>
   
-<section className='flex'>
+<section className=''>
     <Ourteam/>
 </section>
 <section className='p-8' >
     <div className=''>
         <h1 className='text-2xl text-center p-8 font-bold'>News & Events:</h1>
-        <div className='flex gap-8 flex-wrap'>
+        <div className='md:grid md:grid-cols-3 gap-8 flex-wrap'>
             {News.map((items)=>(
-                <div key={items.id} className="w-full sm:w-full lg:w-[30%]">
+                <div key={items.id} className="w-full">
                 <Newscard  id={items.id}  date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
                 </div>
             ))}
@@ -205,9 +216,12 @@ const Home = ()=>{
         <h1 className="font-bold text-2xl">Partners</h1>
         <h1 className="">Grateful for the support of our valued partners.</h1>
     </div>
-    <div className='flex items-center justify-center gap-8 flex-wrap'>
+    <div className='md:grid md:grid-cols-5 items-center h-full w-full justify-center gap-8'>
         {Partnerlist.map((items)=>(
-            <Partner key={items.id} id={items.id} title={items.title} short={items.short} ico={items.ico} />
+            <div className='shadow-md w-full my-auto h-full p-4 items-baseline justify-end'>
+             <Partner key={items.id} id={items.id} title={items.title} short={items.short} ico={items.ico} />
+            </div>
+           
         ))}
     </div>
 
