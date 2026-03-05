@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Marquee from "react-fast-marquee";
 const Partner = ({id, title, short, ico})=>{
     const [toggle, setToggle]=useState(false)
     

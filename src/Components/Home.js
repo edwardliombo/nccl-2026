@@ -33,25 +33,24 @@ const Home = ()=>{
 
     return(
         <div>
-            <header className="grid md:grid-cols-2 sm:grid-cols-1 md:p-8 shadow-md">
+            <header className="grid md:grid-cols-2 sm:grid-cols-1  shadow-md bg-neutral-900 ">
                 <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-                className='flex items-center gap-4 pr-8 max-sm:bg-red-700'>
+                className='flex items-center gap-4 pr-8 max-sm:bg-neutral-900'>
                     <img className=' w-20 max-sm:25' src={Logo} alt='logo'/>
-                    <Marquee direction="right max-sm:invisible"><h1 className='max-sm:bg-red-700 text-lg font-extrabold text-red-700 max-sm:text-red-700 pr-8'>NEAR CONSULT AND COMPANY LIMITED </h1></Marquee>
+                    <div direction="top"><h1 className='h-full w-full max-sm:bg-neutral-900 text-lg  text-neutral-200 max-sm:text-neutral-200 pr-100'>Near Consult and Company Limited </h1></div>
                 </motion.div>
                 
-                <ul className="grid md:grid-cols-6 items-center justify-center max-sm:bg-black max-sm:
-                place-items-start max-sm:text-white max-sm:p-8 max-sm:items-center max-sm:justify-start">
-                    <li className="font-bold hover:text-red-700 cursor-pointer">Home</li>
-                    <li className="font-bold hover:text-red-700 cursor-pointer">About</li>
-                    <li className="font-bold hover:text-red-700 cursor-pointer">Experience</li>
-                    <li className="font-bold hover:text-red-700 cursor-pointer">Team</li>
-                    <li className="font-bold hover:text-red-700 cursor-pointer">Project</li>   
-                    <li className="font-bold hover:text-red-700 cursor-pointer">Contact</li>
+                <ul className="grid md:grid-cols-6 items-center text-neutral-300 justify-center max-sm:bg-black text-center max-sm:text-left max-sm:place-items-start max-sm:text-neutral-400 max-sm:p-8  max-sm:justify-start">
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Home</li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">About</li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Experience</li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Team</li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Project</li>   
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Contact</li>
                 </ul>
             </header>
             
@@ -244,7 +243,7 @@ const Home = ()=>{
   ></iframe>
 </div>
 
-            <section className='flex flex-wrap gap-8 bg-black text-white'>
+            <section className='flex flex-wrap gap-8 bg-neutral-900 text-white'>
                 <div className='flex-1 p-8'>
                     <h1 className='text-2xl font-bold text-white'>Contact Us:</h1>
                     <div>
