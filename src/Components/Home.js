@@ -12,7 +12,6 @@ import Logo from '../assets/logo.jpg'
 import Missioncard from './Missioncard';
 import {Mission, Core, News, Partnerlist} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
-import Marquee from 'react-fast-marquee';
 import Newscard from './Newscard';
 import Partner from './Partner';
 
