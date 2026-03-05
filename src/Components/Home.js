@@ -33,18 +33,19 @@ const Home = ()=>{
 
     return(
         <div>
-            <header className="md:flex md:justify-between md:p-8 shadow-md">
+            <header className="grid md:grid-cols-2 sm:grid-cols-1 md:p-8 shadow-md">
                 <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 1, ease: "easeInOut" }}
-                className='flex items-center gap-4'>
-                    <img className='w-20' src={Logo} alt='logo'/>
-                    <Marquee direction="right"><h1 className='text-lg font-extrabold text-red-700 pr-8'>NEAR CONSULT AND COMPANY LIMITED </h1></Marquee>
+                className='flex items-center gap-4 pr-8 max-sm:bg-red-700'>
+                    <img className=' w-20 max-sm:25' src={Logo} alt='logo'/>
+                    <Marquee direction="right max-sm:invisible"><h1 className='max-sm:bg-red-700 text-lg font-extrabold text-red-700 max-sm:text-red-700 pr-8'>NEAR CONSULT AND COMPANY LIMITED </h1></Marquee>
                 </motion.div>
                 
-                <ul className="md:flex md:gap-16 items-center">
+                <ul className="grid md:grid-cols-6 items-center justify-center max-sm:bg-black max-sm:
+                place-items-start max-sm:text-white max-sm:p-8 max-sm:items-center max-sm:justify-start">
                     <li className="font-bold hover:text-red-700 cursor-pointer">Home</li>
                     <li className="font-bold hover:text-red-700 cursor-pointer">About</li>
                     <li className="font-bold hover:text-red-700 cursor-pointer">Experience</li>
@@ -54,32 +55,31 @@ const Home = ()=>{
                 </ul>
             </header>
             
-            <section className='flex items-center justify-center md:mt-4 md:w-full md:h-full md:relative'>
+            <section className='flex items-center justify-center md:w-full md:h-full md:relative'>
                 <video className='w-full object-cover brightness-50'  src={video} autoPlay loop muted ></video>
                 <div className="absolute flex flex-col gap-8 items-center">
                     <motion.h1
-                     className='font-bold text-5xl text-white'>
+                     className=' font-bold text-5xl max-sm:text-sm text-white'>
                         {displayedText}
                     </motion.h1>
-                    <motion.div className='text-xl text-center text-white p-4 px-48'><Greetings /> </motion.div>
-                    <button className='md:bg-red-700 md:p-2 md:pl-3 md:pr-3 rounded-sm text-white'>Discover More</button>
+                    <motion.div className='max-sm:text-sm text-xl text-center text-white p-4 max-sm:p-0 px-48'><Greetings /> </motion.div>
+                    <button className='md:bg-red-700 max-sm:bg-red-700 max-sm:p-2  md:p-2 md:pl-3 md:pr-3 rounded-sm text-white'>Discover More</button>
                 </div>
             </section>
 
-
-            <section className='grid md:grid-cols-2 sm:grid-cols-1 p-8  pt-28 pb-28 gap-4 bg-gray-200'>
-                <div className='grid md:grid-cols-2 sm:grid-cols-1 items-center gap-8'>
-                    <div className=''>
-                        <div className='flex flex-col pl-8'>
-                            <h1 className='text-5xl font-bold'>About Us</h1>
+            <section className='grid md:grid-cols-2 max-sm:grid-cols-1 p-4 max-sm:p-0 max-sm:pt-2 max-sm:pb-2 pb-0 gap-4 bg-gray-200'>
+                <div className='grid md:grid-cols-2 max-sm:grid-cols-1 items-center gap-8 max-sm:gap-2'>
+                    <div className='p-8'>
+                        <div className='flex flex-col'>
+                            <h1 className='text-5xl max-sm:text-2xl pb-8 font-bold max-sm:pb-4'>About Us</h1>
                         </div>
                         
-                        <p className='p-8 text-justify'>
+                        <p className=' max-sm:p-0 text-justify '>
                             Near Consult and Company Limited (NCCL) is a professional Capacity Building, Business, Agribusiness and Management Consultancy firm operating in Tanzania since 2011
                         </p>
                     </div>
-                    <div className='flex flex-col w-full'>
-                        <ul className='flex flex-col gap-4'>
+                    <div className='flex flex-col w-full p-8 max-sm:pt-0'>
+                        <ul className='grid grid-cols-1 max-sm:flex gap-4'>
                             <li className='flex flex-col'>
                                 <div className='flex items-center font-bold'>
                                     <h1 className='text-3xl'>12</h1>
@@ -101,12 +101,12 @@ const Home = ()=>{
                                 <div>Client Satisfaction</div>
                             </li>
                         </ul>
-                    </div>
-                    
+                    </div> 
                 </div>
-                <div className='md:flex md:flex-col w-32 flex-auto gap-4'>
-                    <h1 className='text-5xl font-bold'>Our Services</h1>
-                    <div className='flex justify-between gap-16'>
+
+                <div className='md:flex md:flex-col max-sm:p-8 p-4 flex-auto gap-4'>
+                    <h1 className='text-5xl max-sm:text-2xl font-bold max-sm:pb-4'>Our Services</h1>
+                    <div className='flex justify-between max-sm:gap-4'>
                         <div>
                             <h1 className='text-7xl text-sky-700 font-extrabold'><BiBriefcase/> </h1>
                             <div className='font-bold'>
@@ -129,9 +129,9 @@ const Home = ()=>{
                 </div>
             </section>
             {/*vission and mission section */}
-            <section className='grid md:grid-cols-2 sm:grid-cols-1 p-4 mt-4'>
-                <div className='p-8 shadow-lg'>
-                    <h1 className='text-5xl font-bold pb-8'>Who Are We</h1>
+            <section className='grid md:grid-cols-2 sm:grid-cols-1 p-4 max-sm:p-0 mt-4 max-sm:mt-0'>
+                <div className='p-8 max-sm:p-8 shadow-lg'>
+                    <h1 className='text-5xl font-bold pb-8 max-sm:pb-4 max-sm:text-2xl'>Who Are We</h1>
                     <details>
 
 <summary className="cursor-pointer font-semibold text-lg text-justify">
@@ -146,7 +146,7 @@ const Home = ()=>{
                      
                     
                 </div>
-                <div className="rounded-md p-4 ">
+                <div className="rounded-md p-4 max-sm:p-0">
                     <div className='justify-center'>
                         <div className='grid md:grid-cols-2 md:gap-8 sm:grid-cols-1'>
                         {Mission.map((list)=>(
@@ -163,9 +163,9 @@ const Home = ()=>{
             </section>
             <section className='flex flex-col items-center '>
                 <h1 className='text-2xl font-bold'>Core Values</h1>
-                <div className='md:grid md:grid-cols-4 sm:grid-cols-4 gap-8 items-center justify-center w-full'>
+                <div className='md:grid md:grid-cols-4 max-sm:grid-cols-2 gap-8 items-center justify-center w-full'>
                     {Core.map((items)=>(
-                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className='flex w-full h-full p-8 shadow-md '>
+                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className=' w-full h-full p-8 shadow-md '>
                         <Missioncard key={items.id} id={items.id} name={items.name} title={items.title} ico={items.ico}/>
                         </motion.div>
                         
@@ -173,8 +173,8 @@ const Home = ()=>{
                 </div>
             </section>
             
-            <section className='flex p-8 gap-12'>
-                <div className='border-l-8 flex-1 p-4 rounded-l-lg bg-gray-200 border-green-700'>
+            <section className='flex p-8 max-sm:p-0 max-sm:gap-2 gap-12 max-sm:flex-col'>
+                <div className='w-full h-full border-l-8 flex-1 p-4 rounded-l-lg bg-gray-200 border-green-700'>
                     <h1 className='text-2xl font-bold '>
                         <span>Primary Geographic Coverage</span>
                     </h1>
@@ -182,7 +182,7 @@ const Home = ()=>{
                         Our company mostly covers Mbeya, Songwe, Rukwa, Katavi, Njombe, Iringa, Morogoro and Dar es salaam. 
                     </p>
                 </div>
-                <div className='flex-1 border-l-8 p-4 rounded-l-lg bg-gray-200 border-sky-700'>
+                <div className='w-full h-full flex-1 border-l-8 p-4 rounded-l-lg bg-gray-200 border-sky-700'>
                     <h1 className='text-2xl font-bold '>
                         <span>Coming Coverage</span>
                     </h1>
@@ -196,7 +196,7 @@ const Home = ()=>{
 <section className=''>
     <Ourteam/>
 </section>
-<section className='p-8' >
+<section className='p-8 max-sm:p-0' >
     <div className=''>
         <h1 className='text-2xl text-center p-8 font-bold'>News & Events:</h1>
         <div className='md:grid md:grid-cols-3 gap-8 flex-wrap'>
@@ -216,7 +216,7 @@ const Home = ()=>{
         <h1 className="font-bold text-2xl">Partners</h1>
         <h1 className="">Grateful for the support of our valued partners.</h1>
     </div>
-    <div className='md:grid md:grid-cols-5 items-center h-full w-full justify-center gap-8'>
+    <div className='md:grid md:grid-cols-5 max-sm:grid-cols-2 items-center h-full w-full justify-center gap-8'>
         {Partnerlist.map((items)=>(
             <div className='shadow-md w-full my-auto h-full p-4 items-baseline justify-end'>
              <Partner key={items.id} id={items.id} title={items.title} short={items.short} ico={items.ico} />
@@ -244,7 +244,7 @@ const Home = ()=>{
   ></iframe>
 </div>
 
-            <section className='flex gap-8 bg-black text-white'>
+            <section className='flex flex-wrap gap-8 bg-black text-white'>
                 <div className='flex-1 p-8'>
                     <h1 className='text-2xl font-bold text-white'>Contact Us:</h1>
                     <div>

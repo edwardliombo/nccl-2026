@@ -2,12 +2,12 @@ import Teamcard from './Teamcard';
 import Teamlist from './Teamlist'
 const Ourteam = ()=>{
     return(
-                <div className='mx-auto mt-8'>
+                <div className='mx-auto mt-8 max-sm:mt-4'>
                     <div>
-                        <h1 className='text-2xl text-center font-bold md:pb-5'>Meet Our Team</h1>
+                        <h1 className='text-2xl text-center font-bold md:pb-5 max-sm:pb-2'>Meet Our Team</h1>
                     </div>
                     
-                    <div className='md:grid md:grid-cols-4 p-8 gap-8'>
+                    <div className='md:grid md:grid-cols-4 p-8 max-sm:p-0 gap-8'>
                         {Teamlist.map((list)=>(
                             <div className="">
                                 <Teamcard name={list.name} title={list.title} photo={list.photo} />
