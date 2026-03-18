@@ -14,6 +14,7 @@ import {Mission, Core, News, Partnerlist} from './Mission';
 import { GiTeacher } from 'react-icons/gi';
 import Newscard from './Newscard';
 import Partner from './Partner';
+import { Link } from 'react-router-dom';
 
 const Home = ()=>{
         const fullText = " Near Consult and Company Limited ";
@@ -31,8 +32,9 @@ const Home = ()=>{
   }, []);
 
     return(
-        <div>
-            <header className="grid md:grid-cols-2 sm:grid-cols-1  shadow-md bg-neutral-900 ">
+        <div className='max-sm:text-sm '>
+      
+            <header className="grid md:grid-cols-2 sm:grid-cols-1  shadow-md bg-neutral-950">
                 <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,16 +42,15 @@ const Home = ()=>{
             transition={{ duration: 1, ease: "easeInOut" }}
                 className='flex items-center gap-4 pr-8 max-sm:bg-neutral-900'>
                     <img className=' w-20 max-sm:25' src={Logo} alt='logo'/>
-                    <div direction="top"><h1 className='h-full w-full max-sm:bg-neutral-900 text-lg  text-neutral-200 max-sm:text-neutral-200 pr-100'>Near Consult and Company Limited </h1></div>
+                    <div direction="top"><h1 className='h-full w-full max-sm:bg-neutral-900 text-lg  text-neutral-200 max-sm:text-lg max-sm:text-neutral-200 pr-100'>Near Consult and Company Limited </h1></div>
                 </motion.div>
-                
-                <ul className="grid md:grid-cols-6 items-center text-neutral-300 justify-center max-sm:bg-black text-center max-sm:text-left max-sm:place-items-start max-sm:text-neutral-400 max-sm:p-8  max-sm:justify-start">
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Home</li>
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">About</li>
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Experience</li>
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Team</li>
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Project</li>   
-                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer">Contact</li>
+                <ul className="grid md:grid-cols-6 items-center max-sm:text-lg text-neutral-300 justify-center max-sm:bg-black text-center max-sm:text-left max-sm:place-items-start max-sm:text-neutral-400 max-sm:p-8  max-sm:justify-start">
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/">Home</Link></li>
+                <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/about">About</Link></li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/experience">Experience</Link></li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/Team">Team</Link></li>
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/Project">Project</Link></li>   
+                    <li className="hover:bg-neutral-600 hover:rounded-md pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/Contact">Contact</Link></li>
                 </ul>
             </header>
             
@@ -65,11 +66,11 @@ const Home = ()=>{
                 </div>
             </section>
 
-            <section className='grid md:grid-cols-2 max-sm:grid-cols-1 p-4 max-sm:p-0 max-sm:pt-2 max-sm:pb-2 pb-0 gap-4 bg-gray-200'>
+            <section className='grid md:grid-cols-2 max-sm:grid-cols-1 p-8 pb-8 max-sm:p-0 max-sm:pt-2 max-sm:pb-2 pb-0 gap-4 bg-gray-200'>
                 <div className='grid md:grid-cols-2 max-sm:grid-cols-1 items-center gap-8 max-sm:gap-2'>
                     <div className='p-8'>
                         <div className='flex flex-col'>
-                            <h1 className='text-5xl max-sm:text-2xl pb-8 font-bold max-sm:pb-4'>About Us</h1>
+                            <h1 className='text-5xl max-sm:text-lg pb-8 font-bold max-sm:pb-4'>About Us</h1>
                         </div>
                         
                         <p className=' max-sm:p-0 text-justify '>
@@ -103,7 +104,7 @@ const Home = ()=>{
                 </div>
 
                 <div className='md:flex md:flex-col max-sm:p-8 p-4 flex-auto gap-4'>
-                    <h1 className='text-5xl max-sm:text-2xl font-bold max-sm:pb-4'>Our Services</h1>
+                    <h1 className='text-5xl max-sm:text-lg font-bold max-sm:pb-4'>Our Services</h1>
                     <div className='flex justify-between max-sm:gap-4'>
                         <div>
                             <h1 className='text-7xl text-sky-700 font-extrabold'><BiBriefcase/> </h1>
@@ -127,28 +128,28 @@ const Home = ()=>{
                 </div>
             </section>
             {/*vission and mission section */}
+            
             <section className='grid md:grid-cols-2 sm:grid-cols-1 p-4 max-sm:p-0 mt-4 max-sm:mt-0'>
                 <div className='p-8 max-sm:p-8 shadow-lg'>
-                    <h1 className='text-5xl font-bold pb-8 max-sm:pb-4 max-sm:text-2xl'>Who Are We</h1>
+                    <h1 className='text-5xl font-bold pb-8 max-sm:pb-4 max-sm:text-lg'>Who Are We</h1>
                     <details>
 
-<summary className="cursor-pointer font-semibold text-lg text-justify">
-      Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219.
+<summary className="cursor-pointer font-semibold max-sm:text-sm text-lg text-justify">
+        Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219.
     </summary>
     <div className='text-justify'>
-                         Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
-                    </div>
+        Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
+    </div>
                     
-
-                    </details>
+</details>
                      
                     
                 </div>
                 <div className="rounded-md p-4 max-sm:p-0">
                     <div className='justify-center'>
-                        <div className='grid md:grid-cols-2 md:gap-8 sm:grid-cols-1'>
+                        <div className='grid md:grid-cols-2 md:gap-8 max-sm:gap-2 max-sm:grid-cols-2'>
                         {Mission.map((list)=>(
-                            <div className='w-full h-full p-8 shadow-md'>
+                            <div key={list.id} className='w-full h-full p-8 max-sm:p-4 shadow-md'>
                                 <Missioncard id={list.id} name={list.name} title={list.title} ico={list.ico}/>
                             </div>
                         ))}
@@ -160,10 +161,10 @@ const Home = ()=>{
             </div>
             </section>
             <section className='flex flex-col items-center '>
-                <h1 className='text-2xl font-bold'>Core Values</h1>
-                <div className='md:grid md:grid-cols-4 max-sm:grid-cols-2 gap-8 items-center justify-center w-full'>
+                <h1 className='text-2xl max-sm:text-lg max-sm:p-4 font-bold'>Core Values</h1>
+                <div className='grid md:grid-cols-3 max-sm:grid-cols-2 gap-8 items-center justify-center w-full'>
                     {Core.map((items)=>(
-                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className=' w-full h-full p-8 shadow-md '>
+                        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:0.3, ease:easeInOut}} className=' w-full h-full p-8 max-sm:p-4 shadow-md '>
                         <Missioncard key={items.id} id={items.id} name={items.name} title={items.title} ico={items.ico}/>
                         </motion.div>
                         
@@ -172,16 +173,16 @@ const Home = ()=>{
             </section>
             
             <section className='flex p-8 max-sm:p-0 max-sm:gap-2 gap-12 max-sm:flex-col'>
-                <div className='w-full h-full border-l-8 flex-1 p-4 rounded-l-lg bg-gray-200 border-green-700'>
-                    <h1 className='text-2xl font-bold '>
+                <div className='w-full h-full border-l-8 max-sm:p-2 flex-1 p-4 rounded-l-lg bg-gray-200 border-green-700'>
+                    <h1 className='text-2xl max-sm:text-lg font-bold '>
                         <span>Primary Geographic Coverage</span>
                     </h1>
                     <p>
                         Our company mostly covers Mbeya, Songwe, Rukwa, Katavi, Njombe, Iringa, Morogoro and Dar es salaam. 
                     </p>
                 </div>
-                <div className='w-full h-full flex-1 border-l-8 p-4 rounded-l-lg bg-gray-200 border-sky-700'>
-                    <h1 className='text-2xl font-bold '>
+                <div className='w-full h-full max-sm:p-2 flex-1 border-l-8 p-4 rounded-l-lg bg-gray-200 border-sky-700'>
+                    <h1 className='text-2xl max-sm:text-lg font-bold '>
                         <span>Coming Coverage</span>
                     </h1>
                     <p>
@@ -191,13 +192,13 @@ const Home = ()=>{
                 
             </section>
   
-<section className=''>
+<section className='max-sm:text-sm'>
     <Ourteam/>
 </section>
-<section className='p-8 max-sm:p-0' >
+<section className='p-8 max-sm:p-0 max-sm:text-sm' >
     <div className=''>
-        <h1 className='text-2xl text-center p-8 font-bold'>News & Events:</h1>
-        <div className='md:grid md:grid-cols-3 gap-8 flex-wrap'>
+        <h1 className='text-2xl max-sm:text-lg text-center p-8 font-bold'>News & Events:</h1>
+        <div className='grid md:grid-cols-3 gap-8 flex-wrap'>
             {News.map((items)=>(
                 <div key={items.id} className="w-full">
                 <Newscard  id={items.id}  date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
@@ -209,9 +210,9 @@ const Home = ()=>{
 </section>
 
 {/*.............................Partners Section..........................*/}
-<div className='flex flex-col p-16'>
+<div className='flex flex-col p-16 max-sm:text-sm'>
     <div className="flex flex-col items-center justify-center w-full pb-16">
-        <h1 className="font-bold text-2xl">Partners</h1>
+        <h1 className="font-bold text-2xl max-sm:text-lg">Partners</h1>
         <h1 className="">Grateful for the support of our valued partners.</h1>
     </div>
     <div className='md:grid md:grid-cols-5 max-sm:grid-cols-2 items-center h-full w-full justify-center gap-8'>

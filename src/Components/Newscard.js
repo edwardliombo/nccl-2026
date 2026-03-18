@@ -10,7 +10,7 @@ const Newscard = ({ id, date, year, title, description, photo})=>{
         </div>
         
         <div className='flex flex-col p-8 w-full h-80 justify-between  gap-4 bg-gray-200 '>
-            <h1 className='text-2xl font-bold'>{title} </h1>
+            <h1 className='text-2xl max-sm:text-lg font-bold'>{title} </h1>
             <div className="flex-grow bg-gray-200">
                 {description}
             </div>
