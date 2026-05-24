@@ -22,14 +22,14 @@ const Ourservice = ()=>{
         }
     ]
 
-const icons = [<Search/>, <Tractor />, <GraduationCapIcon />];
+    const icons = [<Search className="text-9xl" />, <Tractor className="text-9xl" />, <GraduationCapIcon className="text-9xl" />];
 const title = ["Research & Business Support", "Agribusiness Development", "Training & Capacity Building"]
     return(
-        <section className='grid grid-cols-3 max-sm:grid-cols-2 gap-6 p-6'>
+        <section className='grid grid-cols-3 max-sm:grid-cols-2 gap-6'>
             {servicenews.map((item, index)=>{
                 return(
-                    <div key={item.id} className='flex text-white hover:bg-neutral-100 hover:translate-y-1 transition-all rounded-lg duration-300 hover:cursor-pointer hover:text-black flex-col items-center max-sm:items-center  bg-neutral-950 shadow-lg border border-neural-100 p-12 max-sm:p-6 space-y-8 '>
-                        <h1 className='flex items-center bg-blue-700 w-16 h-16 p-6 text-center rounded-full text-2xl font-bold'>{icons[index]} </h1>
+                    <div key={item.id} className='flex hover:bg-neutral-100 hover:translate-y-1 transition-all rounded-lg duration-300 hover:cursor-pointer hover:text-black flex-col items-center max-sm:items-center  bg-neutral-50 shadow-lg border border-neural-100 p-12 max-sm:p-6 space-y-8 '>
+                        <h1 className='flex items-center bg-white-50 p-6 text-center bg-blue-50 rounded-full text-9xl font-bold'>{icons[index]} </h1>
                         <h1 className='font-bold text-center'>{title[index]} </h1>
                         <div className='text-center line-clamp-3'>
                             {item.description}

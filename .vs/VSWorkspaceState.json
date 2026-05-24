@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\assets",
     "\\src\\Components"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\Components\\Partner.js",
   "PreviewInSolutionExplorer": false
 }

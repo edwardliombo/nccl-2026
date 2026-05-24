@@ -22,7 +22,7 @@ const Greetings = ()=>{
     return ()=>clearInterval(intval)
     },[textNum, animText])
     return(
-        <motion.div  className='border-red-700 h-32 text-white'
+        <motion.div  className=' text-white text-lg'
             key={textNum}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

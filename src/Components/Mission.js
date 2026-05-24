@@ -1,10 +1,10 @@
 import { BsEye } from "react-icons/bs";
 import { FaLock, FaRegStar } from "react-icons/fa";
-import { GiTargetArrows } from "react-icons/gi";
 import { IoShareSocial } from "react-icons/io5";
 import { LuShield } from "react-icons/lu";
 import { MdPalette} from "react-icons/md";
 import { PiHandshakeDuotone } from "react-icons/pi";
+import { TbTargetArrow } from "react-icons/tb";
 import { IoDiamond } from "react-icons/io5";
 import picture2 from '../assets/Picture2.png'
 import picture7 from '../assets/Picture7.png'
@@ -21,7 +21,7 @@ const Mission=[
         id:1,
         name:"Mission",
         title:"NCCL’s mission is to empower people and businesses alike through the provision of optimally tailored solutions for their business excellence needs.",
-        ico:<GiTargetArrows />
+        ico: <TbTargetArrow />
     },
     {
         id:2,
@@ -32,7 +32,7 @@ const Mission=[
     {
         id: 3,
         name: "Values",
-        title: "NCCL’s Vision is to be the most reliable and responsible support services to our clients, and committed partners towards growth and continuing success.",
+        title: "Integrity, Excellence, Connecting, Customer Care, Creativeness, Confidentiality",
         ico: <IoDiamond />
     }
 ]
