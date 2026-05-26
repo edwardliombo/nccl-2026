@@ -1,20 +1,16 @@
-import { FaFacebook, FaFacebookSquare, FaInstagramSquare, FaWhatsappSquare, FaLinkedin } from 'react-icons/fa';
+
 import { TbTargetArrow } from "react-icons/tb";
 import { IoIosEye } from "react-icons/io";
 import { TbBulbFilled } from "react-icons/tb";
-import { BsTwitterX } from "react-icons/bs";
 import { useEffect, useState } from 'react';
 import { FaSquareEnvelope, FaSquarePhone } from 'react-icons/fa6';
 import { MdLibraryAddCheck } from "react-icons/md";
 import { easeInOut, motion } from 'framer-motion';
 import Greetings from './Greetings';
 import { PiPlusBold } from 'react-icons/pi';
-import picture_22 from '../assets/WhatsApp Image 2026-05-18 at 20.48.10 (1).jpeg';
-import Logo from '../assets/logo.webp'
 import {News, Partnerlist} from './Mission';
 import Newscard from './Newscard';
 import Partner from './Partner';
-import { Link } from 'react-router-dom';
 import Background from './Background';
 import Ourservice from './Ourservice';
 import Cardmission from './Cardmission';
@@ -23,14 +19,13 @@ import picture1 from '../assets/8.jpg'
 import picture3 from '../assets/11.jpg'
 import img_vid from '../assets/5072457-hd_1920_1080_25fps.mp4'
 import img_vid2 from '../assets/kilimo.mp4'
+import Stories from "./Stories";
+
+
 
 const Home = ()=>{
   const fullText = " Near Consult and Company Limited ";
     const [displayedText, setDisplayedText] = useState("");
-
-    const socialIcons = [FaFacebook, BsTwitterX, FaInstagramSquare, FaLinkedin];
-    const links = ["https://www.facebook.com/profile.php?id=61590284373595", "https://x.com/ConsultNear", "https://https://www.instagram.com/nccl_consult?igsh=bm94aTJ4a215NTEw", "https://www.linkedin.com/in/near-consult-bb8281409?utm_source=share_via&utm_content=profile&utm_medium=member_android"];
-
 
   useEffect(() => {
     let i = 0;
@@ -45,45 +40,12 @@ const Home = ()=>{
 
     return(
         <div className='max-sm:text-sm transition-all duration-1000 text-gray-700'>
-           
-            <section className='flex bg-blue-950 justify-between p-2 items-center '>
-                <h1 className='text-sm font-bold text-white px-8'>Near Consult & Co.Ltd</h1>
-                <div className="flex justify-end items-center ">
-                    {
-                        socialIcons.map((Icon, index) => (
-                            <a className="text-white border-l px-4 hover:text-amber-400 text-center border-white" href={links[index]} target="_blank" rel="noopener noreferrer" key={index}>
-                                <Icon />
-                            </a>
-                        ))
-                    }
-
-                </div>
-            </section>
-            <header className="grid md:grid-cols-2 sm:grid-cols-1  shadow-md">
-            <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-                className='flex items-center gap-6 max-sm:bg-neutral-900 p-4 px-8'>
-                    <img className=' w-20 max-sm:25' src={Logo} alt='logo'/>
-                </motion.div>
-                <ul className="grid md:grid-cols-6 items-center max-sm:text-lg text-blue-950 justify-center max-sm:bg-black text-center max-sm:text-left max-sm:place-items-start max-sm:text-neutral-400 max-sm:p-8  max-sm:justify-start">
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24  hover:p-1 cursor-pointer"><Link to="/">Home</Link></li>
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/about">About</Link></li>
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/experience">Experience</Link></li>
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/team">Team</Link></li>
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/project">Project</Link></li>   
-                    <li className="hover:bg-amber-400 hover:font-bold pl-2 w-24 hover:p-1 cursor-pointer"><Link to="/contact">Contact</Link></li>
-                </ul>
-            </header>    
-
             <section className='flex items-center justify-center md:w-full md:h-full md:relative'>
            
                 <Background />
                 <motion.div className="absolute flex flex-col gap-6 items-center">
                     <motion.h1
-                     className=' text-5xl max-sm:text-sm text-white'>
+                     className=' text-5xl max-sm:text-3xl text-white'>
                         {displayedText}
                     </motion.h1>
                     <div className='w-[520px] flex justify-center text-white bg-[rgba(0,0,0,0.5)] p-8'>
@@ -104,7 +66,7 @@ const Home = ()=>{
     transition={{duration:1, ease:easeInOut}}
     className='flex space-x-6 '>
     <div className='flex flex-col w-full max-sm:pt-0'>
-        <ul className='grid grid-cols-3 max-sm:flex gap-4 text-white '>
+        <ul className='grid grid-cols-3 max-sm:flex max-sm:justify-between max-sm:p-4 gap-4 text-white '>
             <li className='flex flex-col items-center space-y-1'>
                 <div className='flex items-center justify-center font-bold'>
                     <h1 className='text-3xl'>15</h1>
@@ -132,14 +94,14 @@ const Home = ()=>{
 
             {/****************Who we are *************************/}
 
-            <section className='grid justify-between md:grid-cols-2 space-x-4 max-sm:grid-cols-1 py-8 px-4  '>
-                <div className="px-8">
+            <section className='grid justify-between md:grid-cols-2 space-x-4 max-sm:space-x-2 max-sm:grid-cols-1 py-8 px-4 max-sm:px-2 '>
+                <div className="px-8 max-sm:px-2">
                     <h1 className='text-5xl text-blue-950 py-8'>Who We Are  </h1>
                     <div className="text-lg text-justify">
-                        Near Consult and Company Limited (NCCL) is an established Capacity Building, Training,Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219. Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
+                        Near Consult and Company Limited (NCCL) is an established Capacity Building, Training, Research, Agribusiness, Business, and Management Consultancy Company in the United Republic of Tanzania with a commitment to aligning client development with the overall organization's culture and operating systems. With experienced and professional experts, we have been operating since 2011 with registration number 86219. Our organization originally specializes in conducting Training, Coaching, Mentorship service, Research, Business support, market linkage, Incubation, and business development services to Institutions, NGOs, Farmer's Groups/ Producer Organisations (POs), Micro, Small and Medium Enterprises (MSMEs). NCCL expanded the range of services to cover Agribusiness Development, Marketing System Development consulting, Transformational/Change management training, and other related activities.
                     </div>
                     <div className='flex space-x-2 pt-8'>
-                        <button className="bg-amber-400 text-blue-950 rounded-sm font-bold p-1 px-2 hover:bg-blue-950 hover:text-white hover:transition-all duration-300">Learn More</button>
+                        <button className="bg-amber-400 text-blue-950 rounded-sm font-bold p-1 px-6 hover:bg-blue-950 hover:text-white hover:transition-all duration-300">Learn More</button>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2 py-8 ">
@@ -153,12 +115,12 @@ const Home = ()=>{
                             playsInline
                             preload="auto"
                         />
-                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Morogoro Project Via Nafaka Kilimo | February, 2026</h1>
+                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Morogoro Project Via Nafaka Kilimo | March, 2026</h1>
                     </div>
 
                     <div className="relative h-64">
                         <img className="w-full h-full object-cover rounded-md" src={picture2} alt="company" />
-                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Capacity Building & Training | 2025 </h1>
+                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Capacity Building & Training | 2026 </h1>
                     </div>
                     
                     <div className="relative h-64">
@@ -175,17 +137,17 @@ const Home = ()=>{
                             playsInline
                             preload="auto"
                         />
-                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Mbarali Project Via Nafaka Kilimo | February, 2026</h1>
+                        <h1 className="text-white text-center text-lg w-full absolute rounded-b-md bottom-0 p-2 px-8 bg-[rgba(0,0,0,0.5)]">Mbarali Project Via Nafaka Kilimo | June, 2026</h1>
                     </div>
                 </div>
 </section>
 
-<section className='grid justify-between md:grid-cols-2 max-sm:grid-cols-1 py-20 px-4  '>
+<section className='grid justify-between md:grid-cols-2 max-sm:grid-cols-1 py-20 max-sm:py-2 px-4  '>
     <div className="bg-blue-100">
         <img className="w-full h-96 object-cover rounded-md" src={picture1} alt="company" />
     </div>
 
-    <div className='flex flex-col gap-8 leading-20 justify-evenly p-16 max-sm:p-4 bg-blue-100'>
+    <div className='flex flex-col gap-8 max-sm:gap-2 leading-20 justify-evenly  p-16 max-sm:p-2 bg-blue-100'>
             <div>
                         <h1 className="text-blue-950 text-5xl">About Us</h1>
                         <div className="py-8 text-lg">
@@ -194,14 +156,14 @@ const Home = ()=>{
 
                     </div>
                     <div className='flex space-x-2 '>
-                        <button className="bg-amber-400 text-blue-950 rounded-sm font-bold p-1 px-2 hover:bg-blue-950 hover:text-white hover:transition-all duration-300">Learn More</button>
-                        <button className="text-blue-950 hover:bg-blue-950 hover:text-white hover:transition-all duration-300 border-[1px] border-blue-950 rounded-sm p-1 px-2 font-bold">Contact Us</button>
+                        <button className="bg-amber-400 text-blue-950 rounded-sm font-bold p-1 px-6 hover:bg-blue-950 hover:text-white hover:transition-all duration-300">Learn More</button>
+                        <button className="text-blue-950 hover:bg-blue-950 hover:text-white hover:transition-all duration-300 border-[1px] border-blue-950 rounded-sm p-1 px-6 font-bold">Contact Us</button>
                     </div>
     </div>
 
             </section>
 
-    <section className='grid grid-cols-3 max-sm:grid-cols-1 gap-8 p-6 py-16'>
+    <section className='grid grid-cols-3 max-sm:grid-cols-1 gap-8 p-6 max-sm:p-4 py-16 max-sm:py-2'>
                 <div className="flex flex-col justify-evenly bg-amber-50 border-[1px] boder-amber-700 items-center w-full space-y-8 shadow-md rounded-md p-16">
                     <TbTargetArrow className="text-7xl text-amber-400" />
                     <h1 className="text-2xl w-full font-bold mb-4 bg-amber-400 text-blue-950 p-2">Mission</h1>
@@ -252,7 +214,7 @@ const Home = ()=>{
             </section>
 
 {/*************************************Our SERVICES****************************************/}
-<section className='flex flex-col max-w-6xl mx-auto py-8 space-y-8  items-center'>
+<section className='flex flex-col max-w-6xl mx-auto py-8 space-y-8 max-sm:p-4 max-sm:py-2  items-center'>
     <div className='flex flex-col items-center space-y-8'>
         <h1 className='text-5xl'>Our Services</h1>
         <h2 className='text-xl'>From Quality we have welcome</h2>
@@ -264,28 +226,26 @@ const Home = ()=>{
 
  <div>
     <Cardmission />
-            </div>
+</div>
 
 <section className='p-8 max-sm:p-0 max-sm:text-sm' >
     <div className=''>
-                    <h1 className='text-5xl text-center py-16'>News & Events</h1>
-                    <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:p-6 gap-8">
-                        <div className="relative py-8">
-                            <img className="w-full h-full object-cover rounded-md" src={picture_22} alt="company" />
-                        </div>
+        <h1 className='text-5xl text-center py-16 max-sm:py-2'>Stories from the</h1>
+    <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:p-4 gap-8 max-sm:gap-2">
+            <div className="relative py-8">
+                <Stories />
+            </div>
 
-                        <div className='grid md:grid-cols-2 gap-8 py-8 flex-wrap'>
-                            {News.map((items) => (
-                                <div key={items.id} className="w-full">
-                                    <Newscard id={items.id} date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
-                                </div>
-                            ))}
-
-                        </div>   
-
-                    </div>
+        <div className='grid md:grid-cols-2 gap-8 max-sm:gap-2 py-8 max-sm:py-2 flex-wrap'>
+            {News.map((items) => (
+                <div key={items.id} className="w-full">
+                    <Newscard id={items.id} date={items.date} year={items.year} title={items.title} description={items.description} photo={items.photo} />
+                </div>
+            ))}
+        </div>   
+</div>
      
-    </div>
+</div>
 </section>
 
 {/*.............................Partners Section..........................*/}
@@ -359,24 +319,6 @@ const Home = ()=>{
                 {/*3*/}
                 <div className='flex-1 p-8'>
                     <h1 className='text-2xl font-bold text-white'>Social Media:</h1>
-                    <div>
-                        <div>
-                        
-                        <ul className='pt-8 flex text-5xl'>
-                            <li className="items-center">
-                                <FaWhatsappSquare />
-                            </li>
-                            <li className="md:flex gap-4 items-center">
-                                <FaFacebookSquare />
-                            </li>
-                            <li className="md:flex gap-4 items-center">
-                                <FaInstagramSquare />
-                            </li>
-                        </ul>
-                    </div>
-
-                    </div>
-                    
                 </div>
             </section>
         </div>

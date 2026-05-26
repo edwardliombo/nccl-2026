@@ -23,7 +23,7 @@ const Ourservice = ()=>{
     ]
 
     const icons = [<Search className="text-9xl" />, <Tractor className="text-9xl" />, <GraduationCapIcon className="text-9xl" />];
-const title = ["Research & Business Support", "Agribusiness Development", "Training & Capacity Building"]
+const title = ["Training & Capacity Building","Research & Business Support", "Agribusiness Development" ]
     return(
         <section className='grid grid-cols-3 max-sm:grid-cols-2 gap-6'>
             {servicenews.map((item, index)=>{

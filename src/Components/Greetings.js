@@ -18,7 +18,6 @@ const Greetings = ()=>{
                 prev===animText.length-1?0:prev+1
             ))
     }, 15000);
-    console.log(animText[textNum])
     return ()=>clearInterval(intval)
     },[textNum, animText])
     return(
