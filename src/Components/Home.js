@@ -20,6 +20,7 @@ import picture3 from '../assets/11.jpg'
 import img_vid from '../assets/5072457-hd_1920_1080_25fps.mp4'
 import img_vid2 from '../assets/kilimo.mp4'
 import Stories from "./Stories";
+import Logo from '../assets/logo.webp'
 
 
 
@@ -249,19 +250,27 @@ const Home = ()=>{
 </section>
 
 {/*.............................Partners Section..........................*/}
-<div className='flex flex-col p-16 max-sm:text-sm bg-blue-950'>
+<div className='flex flex-col p-16 max-sm:text-sm bg-neutral-700'>
     <div className="flex flex-col items-center justify-center w-full pb-16">
                     <h1 className='text-5xl py-4 text-white'>Our Partners</h1>
         <h1 className="text-white">Grateful for the support of our valued partners.</h1>
+    </div> 
+
+<div className='grid grid-cols-2 max-sm:grid-cols-1 max-sm:justify-center max-sm:items-center space-x-4 max-sm:gap-2 items-center justify-center w-full' >
+    <div className="max-sm:items-center max-sm:justify-center">
+        <img className='w-64 object-cover rounded-md' src={Logo} alt="company" />
     </div>
-    <div className='md:grid md:grid-cols-5 max-sm:grid-cols-2 items-center h-full w-full justify-center gap-8'>
+    <div className='md:grid md:grid-cols-3 max-sm:grid-cols-2 items-center h-full w-full justify-center gap-4'>
         {Partnerlist.map((items)=>(
-            <div className='bg-white w-full my-auto h-full p-4 items-baseline justify-end rounded-lg'>
+            <div>
              <Partner key={items.id} id={items.id} title={items.title} short={items.short} ico={items.ico} />
             </div>
            
         ))}
     </div>
+    
+</div>    
+
 
 </div>
 {/*Contact Section*/}
