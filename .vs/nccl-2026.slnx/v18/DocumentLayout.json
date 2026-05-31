@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\nccl-2026\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Stories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Stories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Home.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Home.js",
               "RelativeDocumentMoniker": "src\\Components\\Home.js",
-              "ToolTip": "E:\\nccl-2026\\src\\Components\\Home.js*",
-              "RelativeToolTip": "src\\Components\\Home.js*",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAAAP8AAAAKAAAAAAAAAA==",
+              "ToolTip": "E:\\nccl-2026\\src\\Components\\Home.js",
+              "RelativeToolTip": "src\\Components\\Home.js",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAkwP8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-22T10:11:04.422Z",
               "IsPinned": true,
@@ -45,39 +49,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Footer.js",
+              "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Footer.js",
+              "RelativeDocumentMoniker": "src\\Components\\Footer.js",
+              "ToolTip": "E:\\nccl-2026\\src\\Components\\Footer.js",
+              "RelativeToolTip": "src\\Components\\Footer.js",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-31T03:14:41.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Stories.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Stories.js",
               "RelativeDocumentMoniker": "src\\Components\\Stories.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Stories.js",
               "RelativeToolTip": "src\\Components\\Stories.js",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACEAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-26T16:23:31.584Z",
+              "WhenOpened": "2026-05-31T01:52:56.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Header.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Header.js",
               "RelativeDocumentMoniker": "src\\Components\\Header.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Header.js",
               "RelativeToolTip": "src\\Components\\Header.js",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADQAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABwAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-26T15:41:23.904Z"
+              "WhenOpened": "2026-05-30T23:30:48.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Partner.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Partner.js",
               "RelativeDocumentMoniker": "src\\Components\\Partner.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Partner.js",
               "RelativeToolTip": "src\\Components\\Partner.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-24T18:26:28.659Z"
+              "WhenOpened": "2026-05-24T18:26:28.659Z",
+              "EditorCaption": ""
             }
           ]
         }

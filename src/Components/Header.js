@@ -22,11 +22,11 @@ const Header = () => {
     return(
         <>
         <section className='flex bg-blue-950 justify-between p-2 items-center '>
-                <h1 className='text-sm font-bold text-white px-8'>Near Consult & Co.Ltd</h1>
+                <h1 className='text-sm font-bold text-white px-8 max-sm:px-2 max-sm:text-sm'>Near Consult & Co.Ltd</h1>
                 <div className="flex justify-end items-center ">
                     {
                         socialIcons.map((Icon, index) => (
-                            <a className="text-white border-l px-4 hover:text-amber-400 text-center border-white" href={links[index]} target="_blank" rel="noopener noreferrer" key={index}>
+                            <a className="text-white border-l px-4 max-sm:px-2 max-sm:text-sm hover:text-amber-400 text-center border-white" href={links[index]} target="_blank" rel="noopener noreferrer" key={index}>
                                 <Icon />
                             </a>
                         ))
