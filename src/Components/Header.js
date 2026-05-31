@@ -11,7 +11,7 @@ const Header = () => {
     const [toggle, setToggle] = useState(false);
 
     const socialIcons = [FaFacebook, BsTwitterX, FaInstagramSquare, FaLinkedin];
-    const links = ["https://www.facebook.com/profile.php?id=61590284373595", "https://x.com/ConsultNear", "https://www.instagram.com/reel/DXmBgJwvN4v/?igsh=MTI5ZDZhMDRrbThmdw==", "https://www.linkedin.com/in/near-consult-bb8281409?utm_source=share_via&utm_content=profile&utm_medium=member_android"];
+    const links = ["https://www.facebook.com/profile.php?id=61590284373595", "https://x.com/ConsultNear", "https://www.instagram.com/nccl_consult?igsh=bm94aTJ4a215NTEw", "https://www.linkedin.com/in/near-consult-bb8281409?utm_source=share_via&utm_content=profile&utm_medium=member_android"];
 
     const togglerHandler = () => {
         setToggle(!toggle); 

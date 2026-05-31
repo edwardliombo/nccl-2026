@@ -157,7 +157,7 @@ const Home = ()=>{
                     </div>
                     <div className='flex space-x-2 '>
                         <button className="bg-amber-400 text-blue-950 rounded-sm font-bold p-1 px-6 hover:bg-blue-950 hover:text-white hover:transition-all duration-300">Learn More</button>
-                        <button className="text-blue-950 hover:bg-blue-950 hover:text-white hover:transition-all duration-300 border-[1px] border-blue-950 rounded-sm p-1 px-6 font-bold">Contact Us</button>
+                        <button className="text-blue-950 hover:bg-blue-950 hover:text-white hover:transition-all duration-300 border-[1px] border-blue-950 rounded-sm p-1 px-6 font-bold"><a href="#contact">Contact Us</a></button>
                     </div>
     </div>
 
@@ -269,7 +269,7 @@ const Home = ()=>{
 
 </div>
 {/*Contact Section*/}
-            <div className="w-full grid grid-cols-2 max-sm:grid-cols-1">
+            <div id="contact" className="w-full grid grid-cols-2 max-sm:grid-cols-1">
                 <div className="p-16 max-sm:p-2">
                     <form className=" flex flex-col p-8 space-y-8 max-sm:space-y-4 max-sm:p-2">
                         <h1 className="text-5xl">Contact us</h1>

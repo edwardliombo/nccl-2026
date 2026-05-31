@@ -4,7 +4,7 @@ import { MdMarkunreadMailbox } from "react-icons/md";
 const Footer = () => {
     return (
         <section className='flex flex-wrap gap-8 bg-neutral-900 text-white'>
-            <div className='flex-1 p-8'>
+            <div className='flex-1 p-8 max-sm:flex-col'>
                 <h1 className='text-2xl font-bold text-white'>Contact Us:</h1>
                 <div>
                     <div>

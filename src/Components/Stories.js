@@ -75,7 +75,7 @@ const Stories = () => {
           animate="center"
           exit="exit"
           className="slide" className="relative flex flex-col justify-end h-full">
-            <div key={storyArray[index].id} className="absolute bg-blue-950 px-8 py-4 max-sm:p-4  max-sm:line-clamp-2 max-sm:text-sm rounded-b-md text-white text-xl w-full text-justify">
+            <div key={storyArray[index].id} className="absolute bg-blue-950 px-8 py-4 max-sm:p-2 max-sm:px-4  max-sm:text-sm rounded-b-md text-white text-xl w-full text-justify">
                 <h1 className="text-2xl font-bold mb-2 text-amber-200">{storyArray[index].title}</h1>
                 {storyArray[index].description}
             </div>

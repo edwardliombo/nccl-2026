@@ -2,7 +2,7 @@ import Home from "./Components/Home";
 import Experience from "./Components/Experience";
 import "@fontsource/roboto/100.css"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from "./Pages.js/About";
+import About from "./Components/About";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 

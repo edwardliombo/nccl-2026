@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "E:\\nccl-2026\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Background.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Background.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Greetings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Greetings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Stories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Stories.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -11,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\nccl-2026\\src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\Partner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +46,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Home.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Home.js",
               "RelativeDocumentMoniker": "src\\Components\\Home.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Home.js",
               "RelativeToolTip": "src\\Components\\Home.js",
-              "ViewState": "AgIAAPkAAAAAAAAAAAAkwP8AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAAJ8AAADbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-22T10:11:04.422Z",
               "IsPinned": true,
@@ -48,46 +64,98 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Background.js",
+              "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Background.js",
+              "RelativeDocumentMoniker": "src\\Components\\Background.js",
+              "ToolTip": "E:\\nccl-2026\\src\\Components\\Background.js",
+              "RelativeToolTip": "src\\Components\\Background.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-31T05:16:45.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Greetings.js",
+              "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Greetings.js",
+              "RelativeDocumentMoniker": "src\\Components\\Greetings.js",
+              "ToolTip": "E:\\nccl-2026\\src\\Components\\Greetings.js",
+              "RelativeToolTip": "src\\Components\\Greetings.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-31T05:15:23.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.js",
+              "DocumentMoniker": "E:\\nccl-2026\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "E:\\nccl-2026\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-31T05:06:34.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "About.js",
+              "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\About.js",
+              "RelativeDocumentMoniker": "src\\Components\\About.js",
+              "ToolTip": "E:\\nccl-2026\\src\\Components\\About.js",
+              "RelativeToolTip": "src\\Components\\About.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABQAAADXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-31T05:05:12.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Footer.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Footer.js",
               "RelativeDocumentMoniker": "src\\Components\\Footer.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Footer.js",
               "RelativeToolTip": "src\\Components\\Footer.js",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-31T03:14:41.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Stories.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Stories.js",
               "RelativeDocumentMoniker": "src\\Components\\Stories.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Stories.js",
               "RelativeToolTip": "src\\Components\\Stories.js",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAE0AAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-31T01:52:56.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Header.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Header.js",
               "RelativeDocumentMoniker": "src\\Components\\Header.js",
               "ToolTip": "E:\\nccl-2026\\src\\Components\\Header.js",
               "RelativeToolTip": "src\\Components\\Header.js",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAABwAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAACnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-30T23:30:48.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Partner.js",
               "DocumentMoniker": "E:\\nccl-2026\\src\\Components\\Partner.js",
               "RelativeDocumentMoniker": "src\\Components\\Partner.js",
@@ -95,8 +163,7 @@
               "RelativeToolTip": "src\\Components\\Partner.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-24T18:26:28.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T18:26:28.659Z"
             }
           ]
         }
